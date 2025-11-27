@@ -1,12 +1,57 @@
-# React + Vite
+# 📝 Post Management Web App
+*A full-stack CRUD application built using React, Tailwind CSS, Redux, and Appwrite.*
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🚀 Overview
+This project is a **Post Management Web App** that allows users to **add, edit, view, and delete posts**.  
+It features **user authentication**, **protected routes**, and a **responsive interface** — all built using **React** on the frontend and **Appwrite** as the backend service.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> ⚙️ This project currently runs locally (no live hosting). You can clone and run it on your system using the instructions below.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧩 Features
+- 🔐 User authentication (Login / Signup) using **Appwrite**
+- ✍️ Add, edit, delete posts (CRUD functionality)
+- 🚫 Protected routes using a custom `AuthLayout`
+- 🧱 State management with **Redux**
+- 🧭 Routing with **React Router**
+- 🧾 Form handling and validation using **React Hook Form**
+- 🎨 Responsive and reusable UI components with **Tailwind CSS**
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Tools Used |
+|-----------|-------------|
+| **Frontend** | React, Tailwind CSS |
+| **Backend (BaaS)** | Appwrite |
+| **State Management** | Redux |
+| **Routing** | React Router |
+| **Forms** | React Hook Form |
+| **Package Manager** | npm |
+
+---
+
+## ⚙️ Installation & Setup (Run Locally)
+
+Follow these steps to run the project on your local machine:
+
+```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/your-username/post-management-app.git
+
+# 2️⃣ Navigate into the project folder
+cd post-management-app
+
+# 3️⃣ Install dependencies
+npm install
+
+# 4️⃣ Create a .env file in the root directory and add your Appwrite credentials
+VITE_APPWRITE_URL=your_appwrite_endpoint
+VITE_APPWRITE_PROJECT_ID=your_project_id
+
+# 5️⃣ Start the development server
+npm run dev
